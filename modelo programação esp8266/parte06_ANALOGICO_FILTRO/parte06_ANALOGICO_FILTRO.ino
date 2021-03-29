@@ -16,14 +16,14 @@ int sensorAnalogico = A0;
 int values[num];             //vetor com num posições, armazena os valores para cálculo da média móvel
 int adc_noise1;              //armazena a leitura sem filtro da entrada analógica
 int adc_noise2;              //armazena a leitura filtrada da entrada analógica
-int offset = 0;
+int offset = 40;
 int valorTemp = 0;
 
 float temperature = 0.0,       //Armazena a temperatura em graus Celsius
      current_temp = 0.0;      //Armazena a temperatura atual
 
 void setup() {
-Serial.begin(9600); 
+Serial.begin(115200); 
 Serial.println("inicializando");
 
 }

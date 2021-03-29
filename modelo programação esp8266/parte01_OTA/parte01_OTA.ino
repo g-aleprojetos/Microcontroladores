@@ -11,19 +11,19 @@
 #define DISPOSITIVO "dispositivo 01"
 #define SENHADISPOSITIVO "004545"
 #endif
-/************************************************************************************/
-const char* ssid = STASSID;
-const char* password = STAPSK;
 
+/************************************************************************************/
 // --- Constantes Auxiliares ---
 
+/************************************************************************************/
 // --- Protótipo das Funções ---
 void startOTA();
 
-
+/************************************************************************************/
 // --- Variáveis Globais ---
-
-
+const char* ssid = STASSID;
+const char* password = STAPSK;
+/************************************************************************************/
 void setup() {
   Serial.begin(115200);
   Serial.println("Booting");
